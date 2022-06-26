@@ -7,14 +7,15 @@
     <title>Document</title>
 </head>
 <body>
-    <script type="text/javascript">
-    const base = 3;
-    let count = 0;
-    for(let i = 2; i<33; i=i+1){
-        console.log(Math.pow(base, i));
-        count = count+1
-    }
-    console.log(count);
+<div id="square"></div>
+<script type="text/javascript">
+  const squareElement = document.getElementById('square')
+  squareElement.style.backgroundColor = "#00FF00";
+  squareElement.style.width = "40px";
+  squareElement.style.height = "40px";
+  squareElement.style.margin = "auto";
+  
+</script>
 
     </script>
 </body>
