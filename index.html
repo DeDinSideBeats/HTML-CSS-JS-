@@ -7,6 +7,10 @@
     <title>Document</title>
 </head>
 <body>
-    <script type="text/javascript">document.write("Hello, world!")</script>
+    <script type="text/javascript">
+        var element = document.createElement("h1");
+        element.innerText = "Hello, world!";
+        document.body.appendChild(element)
+    </script>
 </body>
 </html>
