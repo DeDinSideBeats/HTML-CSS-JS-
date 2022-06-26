@@ -8,9 +8,14 @@
 </head>
 <body>
     <script type="text/javascript">
-        var element = document.createElement("h1");
-        element.innerText = "Hello, world!";
-        document.body.appendChild(element)
+    const base = 3;
+    let count = 0;
+    for(let i = 2; i<33; i=i+1){
+        console.log(Math.pow(base, i));
+        count = count+1
+    }
+    console.log(count);
+
     </script>
 </body>
 </html>
