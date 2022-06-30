@@ -10,9 +10,6 @@
   <input type="text" id="element" />
 <div id="showMessage"></div>
 <script type="text/javascript">
-  var st = document.getElementById('showMessage');
-  st.style.backgroundColor = "Green";
-  st.style.color = "Yellow";
   const input = document.querySelector('input');
   const text = document.getElementById('element');
   input.addEventListener('keypress', textInput);
@@ -22,9 +19,13 @@
     var mes = text.value;
     let div = document.createElement("div");
     div.innerText = mes;
-    div.className = "alert";
+    div.id = "showMessage";
     div.innerHTML = mes;
-    document.body.append(div);
+    document.body.after(div);
+    div.style.backgroundColor = "Green";
+    div.style.color = "Yellow";
+    div.style.position = "absolute";
+    div.style.left = "10px"
   }
 </script>
 
