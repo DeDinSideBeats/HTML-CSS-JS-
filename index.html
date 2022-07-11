@@ -23,54 +23,58 @@
     let tbody = document.createElement('tbody');
     table.appendChild(thead);
     table.appendChild(tbody);
+    
+    const myTabble = () => {
+      let row_1 = document.createElement('tr');
+      let heading_1 = document.createElement('th');
+      heading_1.innerHTML = "Імя";
+      let data_1 = document.createElement('th');
+      data_1.innerHTML = object.name;
 
-    let row_1 = document.createElement('tr');
-    let heading_1 = document.createElement('th');
-    heading_1.innerHTML = "Імя";
-    let data_1 = document.createElement('th');
-    data_1.innerHTML = object.name;
+      let row_2 = document.createElement('tr');
+      let heading_2 = document.createElement('th');
+      heading_2.innerHTML = "Прізвище";
+      let data_2 = document.createElement('th');
+      data_2.innerHTML = object.surname;
 
-    let row_2 = document.createElement('tr');
-    let heading_2 = document.createElement('th');
-    heading_2.innerHTML = "Прізвище";
-    let data_2 = document.createElement('th');
-    data_2.innerHTML = object.surname;
+      let row_3 = document.createElement('tr');
+      let heading_3 = document.createElement('th');
+      heading_3.innerHTML = "Вік";
+      let data_3 = document.createElement('th');
+      data_3.innerHTML = object.age;
 
-    let row_3 = document.createElement('tr');
-    let heading_3 = document.createElement('th');
-    heading_3.innerHTML = "Вік";
-    let data_3 = document.createElement('th');
-    data_3.innerHTML = object.age;
+      let row_4 = document.createElement('tr');
+      let heading_4 = document.createElement('th');
+      heading_4.innerHTML = "Місто";
+      let data_4 = document.createElement('th');
+      data_4.innerHTML = object.town;
 
-    let row_4 = document.createElement('tr');
-    let heading_4 = document.createElement('th');
-    heading_4.innerHTML = "Місто";
-    let data_4 = document.createElement('th');
-    data_4.innerHTML = object.town;
+      let row_5 = document.createElement('tr');
+      let heading_5 = document.createElement('th');
+      heading_5.innerHTML = "GitHub";
+      let data_5 = document.createElement('th');
+      data_5.innerHTML = object.githubUrl;
 
-    let row_5 = document.createElement('tr');
-    let heading_5 = document.createElement('th');
-    heading_5.innerHTML = "GitHub";
-    let data_5 = document.createElement('th');
-    data_5.innerHTML = object.githubUrl;
+      row_1.appendChild(heading_1);
+      row_2.appendChild(heading_2);
+      row_3.appendChild(heading_3);
+      row_4.appendChild(heading_4);
+      row_5.appendChild(heading_5);
+      row_1.appendChild(data_1);
+      row_2.appendChild(data_2);
+      row_3.appendChild(data_3);
+      row_4.appendChild(data_4);
+      row_5.appendChild(data_5);
+      thead.appendChild(row_1);
+      thead.appendChild(row_2);
+      thead.appendChild(row_3);
+      thead.appendChild(row_4);
+      thead.appendChild(row_5);
+    
+    }
+      
 
-    row_1.appendChild(heading_1);
-    row_2.appendChild(heading_2);
-    row_3.appendChild(heading_3);
-    row_4.appendChild(heading_4);
-    row_5.appendChild(heading_5);
-    row_1.appendChild(data_1);
-    row_2.appendChild(data_2);
-    row_3.appendChild(data_3);
-    row_4.appendChild(data_4);
-    row_5.appendChild(data_5);
-    thead.appendChild(row_1);
-    thead.appendChild(row_2);
-    thead.appendChild(row_3);
-    thead.appendChild(row_4);
-    thead.appendChild(row_5);
-
-
+    myTabble()
     
 
   </script>
